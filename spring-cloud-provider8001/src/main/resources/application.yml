@@ -1,0 +1,14 @@
+server:
+  port: 8001 # 服务端口
+
+
+spring:
+  application:
+    name: provider8001 # 应用名称
+  profiles:
+    active: druid #druid 数据库链接池配置
+
+#mybatis映射资源文件
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.fgh.entity
